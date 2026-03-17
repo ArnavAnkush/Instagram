@@ -1,0 +1,68 @@
+==> Authentication
+    ==> register
+    ==> login
+    ==> logout (token blacklisting)
+    ==> [OTP based registration]
+
+==> post 
+    ==> create
+    ==> can see the feed
+    ==> like posts
+    ==> save post
+    ==> comment on posts
+    ==> delete post
+    ==> update post
+
+==> user
+    ==> profile
+    ==> edit profile
+    ==> follow
+    ==> unfollow
+    ==> block
+    ==> unblock
+    ==> search user
+    ==> followers
+    ==> following
+
+
+
+========================================================
+
+user = {
+    username : String,
+    email : String,
+    password : String,
+    bio : String,
+    profilePicture : String,
+    followers : [String],
+    following : [String],
+    posts : [String],
+    savedPosts : [String],
+    
+}
+
+post = {
+    caption : String,
+    image : String,
+    likes : [String],
+    comments : [String],
+    saved : [String],
+    user : String,
+    createdAt : Date,
+    updatedAt : Date,
+}
+
+comment = {
+    text : String,
+    user : String,
+    post : String,
+    createdAt : Date,
+    updatedAt : Date,
+}
+
+like = {
+    user : String,
+    post : String,
+    createdAt : Date,
+    updatedAt : Date,
+}
