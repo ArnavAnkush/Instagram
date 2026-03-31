@@ -1,7 +1,9 @@
 import React from "react";
+import AppRoutes from "./Approutes";
+import "./style.scss";
 
-const App = () => {
-  return <></>;
-};
+function App() {
+  return <AppRoutes />;
+}
 
 export default App;
